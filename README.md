@@ -15,16 +15,16 @@ Instructions:
 Concernant la notation Cygwin:
   Dar (Disk ARchiver) est un outils pour Linux. Il existe une version Windows qui s'exécute grâce à Cygwin, un émulateur de systèmes Unix pour Windows.
   La notation normale pour un dossier Windows est la suivante: C:\Users\User1\Documents
-  Son équivalent en notation Cygwin remplaces les backslash ("\") with slash ("/") and drives like "C:\" with /cygdrive/c/
+  Son équivalent en notation Cygwin remplaces les backslashs ("\") par des slashs ("/") et le disque, par exemple : "C:\" par /cygdrive/c/
 
-Configuration for Window:
-  Use the Windows task scheduler to planify execution of both cmd files.
-  I configure Windows to execute sauvegardeComplet.cmd every two monthes and sauvegardeDiff.cmd every week.
-  Make sure sauvegardeComplet has been executed at least once before launching the differencial backup.
+Configuration pour Window:
+  Utilisez le planificateur de tâches Windows pour exécuter les fichiers cmd périodiquement.
+  J'ai configuré Windows pour exécuter sauvegardeComplet.cmd tous les deux mois et sauvegardeDiff.cmd chaque semaine
+  Assurez-vous que sauvegardeComplet a été exécuté au moins une fois avant de lancer une sauvegarde différentielle (sauvegardeDiff.cmd).
   
-Configuration for Linux:
-  About the same except, you use cron to planify execution.
-  *.sh files are for Linux.
+Configuration pour Linux:
+  À peu près pareil, sauf qu'il faut utiliser cron pour planifier les exécutions.
+  Les scripts pour Linux finissent par .sh.
 
 
 # darBackup (English)
@@ -52,5 +52,5 @@ Configuration for Window:
   Make sure sauvegardeComplet has been executed at least once before launching the differencial backup.
   
 Configuration for Linux:
-  About the same except, you use cron to planify execution.
+  About the same except, you use cron to planify the executions.
   *.sh files are for Linux.
